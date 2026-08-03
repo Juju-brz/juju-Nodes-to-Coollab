@@ -1,0 +1,4 @@
+sRGB main(sRGB Color) {
+    return vec3(1.) - Color;
+}
+

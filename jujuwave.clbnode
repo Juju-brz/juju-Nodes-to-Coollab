@@ -1,0 +1,15 @@
+#include "_COOL_RES_/shaders/simplex_noise_3D.glsl"
+
+
+INPUT float 'Time';
+INPUT float 'Scale';
+//INPUT float 'Value';
+
+
+
+float main(UV uv) {
+	//simplex_noise_3D(vec3(uv / 'Scale', 'Time')) * 0.5 + 0.5;
+	return cos(simplex_noise_3D(vec3(uv / 'Scale', 'Time')) * 0.5 + 0.5);
+}
+
+

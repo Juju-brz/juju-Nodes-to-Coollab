@@ -1,0 +1,11 @@
+INPUT float 'Value';
+
+float helper(float x, bool maybe)
+{
+    return x + (maybe ? 'Value' : 5.);
+}
+
+float main(float x)
+{
+    return helper(x, x > 2.);
+}
