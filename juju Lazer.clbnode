@@ -1,0 +1,9 @@
+INPUT Point2D 'Anchor 1';
+//INPUT Point2D 'Anchor 2';
+
+INPUT float 'Speed'; // replace greyscale 2 by speed
+
+UV main(float t) { //Modify Curve
+    return (1. - t) * (1. - t) * (1. - t) * 'Anchor 1';        
+           //+ t * t * t * 'Anchor 2';
+}
